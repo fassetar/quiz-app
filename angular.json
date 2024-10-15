@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "quiz-app:build"
+            "buildTarget": "quiz-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "quiz-app:build:production"
+              "buildTarget": "quiz-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "quiz-app:build"
+            "buildTarget": "quiz-app:build"
           }
         },
         "test": {
@@ -131,6 +131,5 @@
         }
       }
     }
-  },
-  "defaultProject": "quiz-app"
+  }
 }
